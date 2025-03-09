@@ -23,8 +23,6 @@ async def help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 /help -> It shows available Commands 
 /courses -> It shows available Courses
 /roadmap -> Mastering Programming Language
-/problems -> Practice problems to Solve
-/projects -> It gives real-time projects
         """
     )
 
@@ -43,16 +41,7 @@ async def courses(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Roadmap - Drive link
 async def roadmap(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Drive Link: https://drive.google.com/drive/folders/1jp6XBJVH_fbItFL3i2Nvhj1xehJNt31_?usp=sharing")
-
-
-# Problems Command
-async def problems(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Hey this is a problem. solve it")
-
-# Projects command
-async def projects(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Hey this is a project demo")
+    await update.message.reply_text("Drive Link: https://drive.google.com/drive/folders/1jp6XBJVH_fbItFL3i2Nvhj1xehJNt31_?usp=sharing")
 
 
 # Course links
@@ -82,8 +71,7 @@ app.add_handler(CommandHandler('start', start))
 app.add_handler(CommandHandler('help', help))
 app.add_handler(CommandHandler('roadmap', roadmap))
 app.add_handler(CommandHandler('courses', courses))
-app.add_handler(CommandHandler('problems', problems))
-app.add_handler(CommandHandler('projects', projects))
+
 
 app.add_handler(CommandHandler('C', C))
 app.add_handler(CommandHandler('CPP', CPP))
@@ -98,3 +86,5 @@ if __name__ == "__main__":
     app.run_polling()
 
 # updated help and added courses, roadmap(drive), problems, projects - 08/03/2025
+
+# removed problems, projects - 09/03/2025
