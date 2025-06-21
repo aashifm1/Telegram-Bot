@@ -2,7 +2,7 @@
 
 CourseMasterBot is a Telegram bot that helps users access curated programming course links and a learning roadmap with a simple command interface. It supports multiple languages and offers a direct roadmap to mastering programming!
 
-## ✨ Features
+## Features
 
 - `/start` – Welcomes the user.
 - `/help` – Lists all the available commands.
